@@ -1,7 +1,3 @@
-<?php
-    require_once './db_connect.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +10,7 @@
 </head>
 <body>
 
-    <form method="post" action="registro.php">
+    <form method="post" action="registroCTR.php">
         <div class="col">
             <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
@@ -22,7 +18,7 @@
             </div>
             <div class="mb-3">
                 <label for="date" class="form-label">Data de Nascimento</label>
-                <input type="date" name="date" id="date" class="form-control" name="datanascimento">
+                <input type="text" class="form-control" id="datanascimento" name="datanascimento">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
@@ -35,6 +31,9 @@
             <div class="mb-3">
               <label for="pass" class="form-label">Senha</label>
               <input type="password" class="form-control" id="pass" name="senha">
+            </div>
+            <div class="mb-3">
+                <input type="hidden" class="form-control" id="datalog" name="datalog">
             </div>
             <button type="submit" class="btn btn-primary" name="btn-cadastro">Submit</button>
         </div>
