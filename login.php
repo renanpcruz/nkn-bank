@@ -10,29 +10,29 @@
 </head>
 <body>
 
-    <form method="post">
+    <form method="post" action="control/registroCTR.php">
         <div class="col">
             <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="mb-3">
                 <label for="date" class="form-label">Data de Nascimento</label>
-                <input type="date" name="date" id="date" class="form-control">
+                <input type="date" name="date" id="date" class="form-control" name="idade">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" name="email">
             </div>
             <div class="mb-3">
                 <label for="whatsapp" class="form-label">Whatsapp</label>
-                <input type="text" class="form-control" id="whatsapp">
+                <input type="text" class="form-control" id="whatsapp" name="whatsapp">
             </div>
             <div class="mb-3">
               <label for="pass" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="pass">
+              <input type="password" class="form-control" id="pass" name="senha">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" name="btn-cadastro">Submit</button>
         </div>
     </form>
 </body>
