@@ -13,7 +13,7 @@
 
 
 
-        $sql = "INSERT INTO user (nome, datanascimento, email, whatsapp, senha, datalog) VALUES ('$nome','$datanascimento', '$email', '$whatsapp', '$senha', 'GETDATE()')";
+        $sql = "INSERT INTO user (nome, datanascimento, email, whatsapp, senha) VALUES ('$nome','$datanascimento', '$email', '$whatsapp', '$senha')";
 
         if(mysqli_query($connect, $sql)){
             header('Location: registrar.html?sucesso');
