@@ -11,8 +11,6 @@
         $whatsapp = mysqli_escape_string($connect, $_POST['whatsapp']);
         $senha = mysqli_escape_string($connect, $_POST['senha']);
 
-
-
         $sql = "INSERT INTO user (nome, datanascimento, email, whatsapp, senha) VALUES ('$nome','$datanascimento', '$email', '$whatsapp', '$senha')";
 
         if(mysqli_query($connect, $sql)){
