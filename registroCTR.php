@@ -16,9 +16,9 @@
         $sql = "INSERT INTO user (nome, datanascimento, email, whatsapp, senha) VALUES ('$nome','$datanascimento', '$email', '$whatsapp', '$senha')";
 
         if(mysqli_query($connect, $sql)){
-            header('Location: registrar.html?sucesso');
+            header('location:registrar.php?status=success');
         }else{
-            header('Location: registrar.html?falha');
+            header('location:registrar.php?status=fail');
         }
     }
 ?>
