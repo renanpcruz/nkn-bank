@@ -6,7 +6,6 @@
 
         $datanascimento = mysqli_escape_string($connect, $_POST['datanascimento']);
         $datanascimento = date('Y-m-d', strtotime($datanascimento));
-
         $email = mysqli_escape_string($connect, $_POST['email']);
         $whatsapp = mysqli_escape_string($connect, $_POST['whatsapp']);
         $senha = mysqli_escape_string($connect, $_POST['senha']);

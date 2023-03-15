@@ -5,8 +5,7 @@
     }else{
         echo 'Falha ao registrar';
         header('location: registrar.php');
-    }
-        
+    } 
 ?>
 
 <!DOCTYPE html>
